@@ -1,0 +1,63 @@
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+    <div class="page-content">
+      <div class="navbarpages">
+        <div class="navbar_home_link">
+          <a href="index.html"><img src="images/icons/white/home.png" alt="" title=""/></a>
+        </div>
+        <div class="navbar_page_center">Poin</div>
+        <div class="menu_open_icon_white">
+          <a href="#" class="open-panel"><img src="images/menu_open.png" alt="" title=""/></a>
+        </div>
+      </div>
+      <div id="pages_maincontent">
+        <h2 class="page_subtitle">Poin - Journey to Zandria</h2>
+        <div class="page_single">
+          <center>
+          <form name="Calc" class="form-horizontal" role="form">
+            <table>
+            <tr>
+              <td>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-money"></i></span>
+                  <input type="number" min="0" name="gold" class="form-control" size="20" placeholder="Total Gold"></div>
+                <br/>               
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-building"></i></span>
+                  <input type="number" min="0" name="wilayah" class="form-control" size="20" placeholder="Total Wilayah"></div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                  <input type="number" min="0" name="pasukan" class="form-control" size="20" placeholder="Total Pasukan"></div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-optin-monster" aria-hidden="true"></i></span>
+                  <input type="text" min="0" name="monster" class="form-control" size="20" placeholder="Total VP Moster"></div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-optin-monster" aria-hidden="true"></i></span>
+                  <input type="text" min="0" name="totalmonster" class="form-control" size="20" placeholder="Total Moster"></div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-question-circle"></i></span>
+                  <input type="text" min="0" name="quest" class="form-control" size="20" placeholder="Total Quest"></div>
+                <br/>
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-area-chart"></i></span>
+                  <input type="number" name="total" class="form-control" size="20" placeholder="Total Poin Anda" disabled="true"></div>
+                <br/>
+              </td>
+            </tr>
+            <tr>
+              <td style="200px">
+                <input type="button" class="btn btn-default" style="padding: 6px 95px;" name="DoIt" value="=" onclick="Calc.total.value = (eval(Calc.gold.value)/3)+(eval(Calc.wilayah.value)*5)+(eval(Calc.pasukan.value)*3)+(eval(Calc.monster.value))-(eval(Calc.totalmonster.value))+(eval(Calc.quest.value))">
+              </td>
+            </tr>
+            </table>
+          </form>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
